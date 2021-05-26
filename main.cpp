@@ -106,9 +106,6 @@ int main() {
                         element.max = myVector[i-1][j-1].max + element.value;
                     }
                     
-                    if(j < myVector[i-1].size()-1 && (element.max < myVector[i-1][j+1].max + element.value)){
-                        element.max = myVector[i-1][j+1].max + element.value;
-                    }
                     
                     if(element.max > result){
                         result = element.max;
